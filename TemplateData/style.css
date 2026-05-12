@@ -17,7 +17,22 @@ body {
     background: #191919;
     outline: 4px solid #fff;    /* 白色の太めのアウトラインを追加 */
     outline-offset: -2px;       /* アウトラインを少し内側に */
-    margin-bottom: 2px;          /* 下に20pxの隙間を追加 */
+    margin-bottom: 2px;          /* 下に2pxの隙間を追加 */
+}
+#unity-canvas:fullscreen,
+#unity-container:fullscreen #unity-canvas {
+    outline: none;
+    outline-offset: 0;
+}
+#unity-canvas:-webkit-full-screen,
+#unity-container:-webkit-full-screen #unity-canvas {
+    outline: none;
+    outline-offset: 0;
+}
+#unity-canvas:-moz-full-screen,
+#unity-container:-moz-full-screen #unity-canvas {
+    outline: none;
+    outline-offset: 0;
 }
 .unity-mobile #unity-canvas { width: 100%; height: 100% }
 #unity-loading-bar { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: none }
