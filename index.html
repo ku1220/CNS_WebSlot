@@ -62,6 +62,7 @@
         companyName: "cnsinc",
         productName: "RaffleSystem_Web_Unity",
         productVersion: "1.00",
+        devicePixelRatio: 1,
         showBanner: unityShowBanner,
       };
 
@@ -91,9 +92,7 @@
         document.querySelector("#unity-container").className = "unity-mobile";
         canvas.className = "unity-mobile";
 
-        // To lower canvas resolution on mobile devices to gain some
-        // performance, uncomment the following line:
-        // config.devicePixelRatio = 1;
+        // Canvas resolution is fixed to devicePixelRatio 1 in the config above.
 
 
       } else {
